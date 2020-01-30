@@ -1,0 +1,10 @@
+C:\Users\jfish\source\repos\DevBuild\Week3\Lab3point2_ShoppingList\bin\Debug\netcoreapp3.1\Lab3point2_RestaurantMenu.exe
+C:\Users\jfish\source\repos\DevBuild\Week3\Lab3point2_ShoppingList\bin\Debug\netcoreapp3.1\Lab3point2_RestaurantMenu.deps.json
+C:\Users\jfish\source\repos\DevBuild\Week3\Lab3point2_ShoppingList\bin\Debug\netcoreapp3.1\Lab3point2_RestaurantMenu.runtimeconfig.json
+C:\Users\jfish\source\repos\DevBuild\Week3\Lab3point2_ShoppingList\bin\Debug\netcoreapp3.1\Lab3point2_RestaurantMenu.runtimeconfig.dev.json
+C:\Users\jfish\source\repos\DevBuild\Week3\Lab3point2_ShoppingList\bin\Debug\netcoreapp3.1\Lab3point2_RestaurantMenu.dll
+C:\Users\jfish\source\repos\DevBuild\Week3\Lab3point2_ShoppingList\bin\Debug\netcoreapp3.1\Lab3point2_RestaurantMenu.pdb
+C:\Users\jfish\source\repos\DevBuild\Week3\Lab3point2_ShoppingList\obj\Debug\netcoreapp3.1\Lab3point2_RestaurantMenu.AssemblyInfoInputs.cache
+C:\Users\jfish\source\repos\DevBuild\Week3\Lab3point2_ShoppingList\obj\Debug\netcoreapp3.1\Lab3point2_RestaurantMenu.AssemblyInfo.cs
+C:\Users\jfish\source\repos\DevBuild\Week3\Lab3point2_ShoppingList\obj\Debug\netcoreapp3.1\Lab3point2_RestaurantMenu.dll
+C:\Users\jfish\source\repos\DevBuild\Week3\Lab3point2_ShoppingList\obj\Debug\netcoreapp3.1\Lab3point2_RestaurantMenu.pdb

@@ -1,0 +1,11 @@
+C:\Users\jfish\source\repos\DevBuild\Week3\Lab3point2_ShoppingList\bin\Debug\netcoreapp3.1\Lab3point2_ShoppingList.exe
+C:\Users\jfish\source\repos\DevBuild\Week3\Lab3point2_ShoppingList\bin\Debug\netcoreapp3.1\Lab3point2_ShoppingList.deps.json
+C:\Users\jfish\source\repos\DevBuild\Week3\Lab3point2_ShoppingList\bin\Debug\netcoreapp3.1\Lab3point2_ShoppingList.runtimeconfig.json
+C:\Users\jfish\source\repos\DevBuild\Week3\Lab3point2_ShoppingList\bin\Debug\netcoreapp3.1\Lab3point2_ShoppingList.runtimeconfig.dev.json
+C:\Users\jfish\source\repos\DevBuild\Week3\Lab3point2_ShoppingList\bin\Debug\netcoreapp3.1\Lab3point2_ShoppingList.dll
+C:\Users\jfish\source\repos\DevBuild\Week3\Lab3point2_ShoppingList\bin\Debug\netcoreapp3.1\Lab3point2_ShoppingList.pdb
+C:\Users\jfish\source\repos\DevBuild\Week3\Lab3point2_ShoppingList\obj\Debug\netcoreapp3.1\Lab3point2_ShoppingList.csprojAssemblyReference.cache
+C:\Users\jfish\source\repos\DevBuild\Week3\Lab3point2_ShoppingList\obj\Debug\netcoreapp3.1\Lab3point2_ShoppingList.AssemblyInfoInputs.cache
+C:\Users\jfish\source\repos\DevBuild\Week3\Lab3point2_ShoppingList\obj\Debug\netcoreapp3.1\Lab3point2_ShoppingList.AssemblyInfo.cs
+C:\Users\jfish\source\repos\DevBuild\Week3\Lab3point2_ShoppingList\obj\Debug\netcoreapp3.1\Lab3point2_ShoppingList.dll
+C:\Users\jfish\source\repos\DevBuild\Week3\Lab3point2_ShoppingList\obj\Debug\netcoreapp3.1\Lab3point2_ShoppingList.pdb
