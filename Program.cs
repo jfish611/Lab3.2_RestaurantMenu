@@ -23,30 +23,39 @@ namespace Lab3point2_RestaurantMenu
 
             ArrayList itemsOrdered = new ArrayList();
             ArrayList itemsOrderedPrices = new ArrayList();
+            ArrayList quantity = new ArrayList();
 
             string reference;
             bool keepGoing = true;
             bool valid_YorN = false;
             double totalAmt =0;
-            //string avgPrice = (totalAmt / itemsOrdered.Count).ToString("C2");
-
-
+            double comparerHigh = 0;
+            double comparerLow  = 1000;
+            string LowString = "";
+            string highString = "";
 
             while (keepGoing)
             {
                 //////////////////////PRINT MENU//////////////////////////////////////////////////////////////////////////
-                Console.WriteLine("  ________________________________________________");
-                Console.WriteLine(" |           Bougey Items               Price    |");
-                Console.WriteLine("  ________________________________________________");
+                Console.WriteLine("  ___________________________________________________");
+                Console.WriteLine(" |           Bougey Items                   Price    |");
+                Console.WriteLine("  ___________________________________________________");
+
+
+                int i = 1;
                 foreach (KeyValuePair<string, double> kvPair in menuItems)
-                {
-                    Console.WriteLine($"  | {kvPair.Key,-30}  | {kvPair.Value.ToString("C2"), 10}  |");
+                {                   
+                    Console.WriteLine($" {i, -2}  | {kvPair.Key,-30}  | {kvPair.Value.ToString("C2"), 10}  |");
+                    i++;
                 }
-                Console.WriteLine("  ___________________________________________");
+                Console.WriteLine("  ___________________________________________________");
                 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
                 Console.WriteLine("What would you like to order?");
                 string request = Console.ReadLine().ToLower();
+
+
 
                 if (request == "1" || request.Contains("king") || request.Contains("salmon"))
                 {
@@ -62,8 +71,6 @@ namespace Lab3point2_RestaurantMenu
                     {
                         string continueDecision = Console.ReadLine().ToLower();
 
-                        //Console.WriteLine($"You ordered {reference}, would you like to make another order?");
-                        //Console.WriteLine("You ordered..., would you like to continue?");
                         if (continueDecision == "y")
                         {
                             valid_YorN = true;
@@ -77,14 +84,10 @@ namespace Lab3point2_RestaurantMenu
                         }
                         else
                         {
-                            Console.WriteLine("That is not valid input. Please answer 'y' or 'n'.");
-                            
-                            //valid = false;
+                            Console.WriteLine("That is not valid input. Please answer 'y' or 'n'.");                           
                         }
                     }
                     valid_YorN = false;
-
-
                 }
                 else if (request == "2" || request.Contains("dry") || request.Contains("aged") || request.Contains("steak"))
                 {
@@ -98,8 +101,6 @@ namespace Lab3point2_RestaurantMenu
                     {
                         string continueDecision = Console.ReadLine().ToLower();
 
-                        //Console.WriteLine($"You ordered {reference}, would you like to make another order?");
-                        //Console.WriteLine("You ordered..., would you like to continue?");
                         if (continueDecision == "y")
                         {
                             valid_YorN = true;
@@ -114,8 +115,6 @@ namespace Lab3point2_RestaurantMenu
                         else
                         {
                             Console.WriteLine("That is not valid input. Please answer 'y' or 'n'.");
-
-                            //valid = false;
                         }
                     }
                     valid_YorN = false;
@@ -133,8 +132,6 @@ namespace Lab3point2_RestaurantMenu
                     {
                         string continueDecision = Console.ReadLine().ToLower();
 
-                        //Console.WriteLine($"You ordered {reference}, would you like to make another order?");
-                        //Console.WriteLine("You ordered..., would you like to continue?");
                         if (continueDecision == "y")
                         {
                             valid_YorN = true;
@@ -149,8 +146,6 @@ namespace Lab3point2_RestaurantMenu
                         else
                         {
                             Console.WriteLine("That is not valid input. Please answer 'y' or 'n'.");
-
-                            //valid = false;
                         }
                     }
                     valid_YorN = false;
@@ -167,8 +162,6 @@ namespace Lab3point2_RestaurantMenu
                     {
                         string continueDecision = Console.ReadLine().ToLower();
 
-                        //Console.WriteLine($"You ordered {reference}, would you like to make another order?");
-                        //Console.WriteLine("You ordered..., would you like to continue?");
                         if (continueDecision == "y")
                         {
                             valid_YorN = true;
@@ -183,8 +176,6 @@ namespace Lab3point2_RestaurantMenu
                         else
                         {
                             Console.WriteLine("That is not valid input. Please answer 'y' or 'n'.");
-
-                            //valid = false;
                         }
                     }
                     valid_YorN = false;
@@ -201,8 +192,6 @@ namespace Lab3point2_RestaurantMenu
                     {
                         string continueDecision = Console.ReadLine().ToLower();
 
-                        //Console.WriteLine($"You ordered {reference}, would you like to make another order?");
-                        //Console.WriteLine("You ordered..., would you like to continue?");
                         if (continueDecision == "y")
                         {
                             valid_YorN = true;
@@ -217,8 +206,6 @@ namespace Lab3point2_RestaurantMenu
                         else
                         {
                             Console.WriteLine("That is not valid input. Please answer 'y' or 'n'.");
-
-                            //valid = false;
                         }
                     }
                     valid_YorN = false;
@@ -235,8 +222,6 @@ namespace Lab3point2_RestaurantMenu
                     {
                         string continueDecision = Console.ReadLine().ToLower();
 
-                        //Console.WriteLine($"You ordered {reference}, would you like to make another order?");
-                        //Console.WriteLine("You ordered..., would you like to continue?");
                         if (continueDecision == "y")
                         {
                             valid_YorN = true;
@@ -251,8 +236,6 @@ namespace Lab3point2_RestaurantMenu
                         else
                         {
                             Console.WriteLine("That is not valid input. Please answer 'y' or 'n'.");
-
-                            //valid = false;
                         }
                     }
                     valid_YorN = false;
@@ -268,9 +251,6 @@ namespace Lab3point2_RestaurantMenu
                     while (!valid_YorN)
                     {
                         string continueDecision = Console.ReadLine().ToLower();
-
-                        //Console.WriteLine($"You ordered {reference}, would you like to make another order?");
-                        //Console.WriteLine("You ordered..., would you like to continue?");
                         if (continueDecision == "y")
                         {
                             valid_YorN = true;
@@ -285,8 +265,6 @@ namespace Lab3point2_RestaurantMenu
                         else
                         {
                             Console.WriteLine("That is not valid input. Please answer 'y' or 'n'.");
-
-                            //valid = false;
                         }
                     }
                     valid_YorN = false;
@@ -303,8 +281,6 @@ namespace Lab3point2_RestaurantMenu
                     {
                         string continueDecision = Console.ReadLine().ToLower();
 
-                        //Console.WriteLine($"You ordered {reference}, would you like to make another order?");
-                        //Console.WriteLine("You ordered..., would you like to continue?");
                         if (continueDecision == "y")
                         {
                             valid_YorN = true;
@@ -319,8 +295,6 @@ namespace Lab3point2_RestaurantMenu
                         else
                         {
                             Console.WriteLine("That is not valid input. Please answer 'y' or 'n'.");
-
-                            //valid = false;
                         }
                     }
                     valid_YorN = false;
@@ -337,8 +311,6 @@ namespace Lab3point2_RestaurantMenu
                     {
                         string continueDecision = Console.ReadLine().ToLower();
 
-                        //Console.WriteLine($"You ordered {reference}, would you like to make another order?");
-                        //Console.WriteLine("You ordered..., would you like to continue?");
                         if (continueDecision == "y")
                         {
                             valid_YorN = true;
@@ -353,8 +325,6 @@ namespace Lab3point2_RestaurantMenu
                         else
                         {
                             Console.WriteLine("That is not valid input. Please answer 'y' or 'n'.");
-
-                            //valid = false;
                         }
                     }
                     valid_YorN = false;
@@ -370,8 +340,6 @@ namespace Lab3point2_RestaurantMenu
                     {
                         string continueDecision = Console.ReadLine().ToLower();
 
-                        //Console.WriteLine($"You ordered {reference}, would you like to make another order?");
-                        //Console.WriteLine("You ordered..., would you like to continue?");
                         if (continueDecision == "y")
                         {
                             valid_YorN = true;
@@ -386,8 +354,6 @@ namespace Lab3point2_RestaurantMenu
                         else
                         {
                             Console.WriteLine("That is not valid input. Please answer 'y' or 'n'.");
-
-                            //valid = false;
                         }
                     }
                     valid_YorN = false;
@@ -403,8 +369,6 @@ namespace Lab3point2_RestaurantMenu
                     {
                         string continueDecision = Console.ReadLine().ToLower();
 
-                        //Console.WriteLine($"You ordered {reference}, would you like to make another order?");
-                        //Console.WriteLine("You ordered..., would you like to continue?");
                         if (continueDecision == "y")
                         {
                             valid_YorN = true;
@@ -419,11 +383,10 @@ namespace Lab3point2_RestaurantMenu
                         else
                         {
                             Console.WriteLine("That is not valid input. Please answer 'y' or 'n'.");
-
-                            //valid = false;
                         }
                     }
                     valid_YorN = false;
+
                 }
                 else
                 {
@@ -437,17 +400,31 @@ namespace Lab3point2_RestaurantMenu
             Console.Write("             RECEIPT");
             foreach (string FE_item in itemsOrdered)
             {
-                //Console.WriteLine($"{FE_item}" + "      " + menuItems[reference]);
                 Console.Write($"\n\t{FE_item, -30} {menuItems[FE_item].ToString("C2"), -10}");
+                if (comparerHigh < menuItems[FE_item])
+                {
+                    comparerHigh = menuItems[FE_item];
+                    highString = FE_item;
+                }
+                if (comparerLow > menuItems[FE_item])
+                {
+                    comparerLow = menuItems[FE_item];
+                    LowString = FE_item;
+                }
+
             }
-            Console.WriteLine();
+            Console.WriteLine("\n                                    ...........");
             for(int i = 0; i<itemsOrderedPrices.Count; i++)
             {
                 totalAmt += (double)itemsOrderedPrices[i];
             }
-            Console.WriteLine($"\n   Your total is: \t{totalAmt.ToString("C2"), -10}");
+            Console.WriteLine($"\n                             TOTAL: \t{totalAmt.ToString("C2"), -10}");
 
-            Console.WriteLine($"   Average item price:  {(totalAmt / itemsOrdered.Count).ToString("C2"), -10}");
+            Console.WriteLine($"\n\n   Average item price:  {(totalAmt / itemsOrdered.Count).ToString("C2"), -10}");
+            Console.WriteLine($"   Most expensive:      { highString,6}   \t({comparerHigh.ToString("C2"),6})");
+            Console.WriteLine($"   Least expensive:     {LowString,6}   \t({comparerLow.ToString("C2"),6})");
+
+
             Console.WriteLine("_______________________________________________");
             Console.ReadLine();
         }
